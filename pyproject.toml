@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_benchmark"
+version = "0.1.0"
+description = "Benchmark local AI models (Ollama, llama.cpp) for tokens-per-second and reasoning quality"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "rich>=13.7",
+    "click>=8.1",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+ai-benchmark = "benchmark.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-mock>=3.12",
+    "responses>=0.25",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["benchmark*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

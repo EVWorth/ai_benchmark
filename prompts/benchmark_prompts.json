@@ -1,0 +1,142 @@
+[
+  {
+    "id": "math_001",
+    "category": "math",
+    "prompt": "What is 17 multiplied by 24? Answer with only the number.",
+    "expected": "408",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "math_002",
+    "category": "math",
+    "prompt": "A train travels at 60 mph. How many miles will it travel in 2.5 hours? Answer with only the number.",
+    "expected": "150",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "math_003",
+    "category": "math",
+    "prompt": "What is the square root of 144? Answer with only the number.",
+    "expected": "12",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "math_004",
+    "category": "math",
+    "prompt": "If a rectangle has a length of 8 and a width of 5, what is its area? Answer with only the number.",
+    "expected": "40",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "math_005",
+    "category": "math",
+    "prompt": "What is 15% of 200? Answer with only the number.",
+    "expected": "30",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "reasoning_001",
+    "category": "reasoning",
+    "prompt": "All roses are flowers. All flowers need water. Do roses need water? Answer only YES or NO.",
+    "expected": "YES",
+    "match_type": "contains_word"
+  },
+  {
+    "id": "reasoning_002",
+    "category": "reasoning",
+    "prompt": "If today is Wednesday and the meeting is in 3 days, what day is the meeting? Answer with only the day name.",
+    "expected": "Saturday",
+    "match_type": "contains_word"
+  },
+  {
+    "id": "reasoning_003",
+    "category": "reasoning",
+    "prompt": "A farmer has 17 sheep. All but 9 die. How many sheep are left? Answer with only the number.",
+    "expected": "9",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "reasoning_004",
+    "category": "reasoning",
+    "prompt": "Which is heavier: a kilogram of feathers or a kilogram of steel? Answer only FEATHERS, STEEL, or SAME.",
+    "expected": "SAME",
+    "match_type": "contains_word"
+  },
+  {
+    "id": "reasoning_005",
+    "category": "reasoning",
+    "prompt": "You have a 3-liter jug and a 5-liter jug. How can you measure exactly 4 liters? Answer in one sentence.",
+    "expected": "fill the 5",
+    "match_type": "contains_phrase"
+  },
+  {
+    "id": "knowledge_001",
+    "category": "knowledge",
+    "prompt": "What is the chemical symbol for gold? Answer with only the symbol.",
+    "expected": "Au",
+    "match_type": "contains_word"
+  },
+  {
+    "id": "knowledge_002",
+    "category": "knowledge",
+    "prompt": "How many planets are in our solar system? Answer with only the number.",
+    "expected": "8",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "knowledge_003",
+    "category": "knowledge",
+    "prompt": "What programming language was created by Guido van Rossum? Answer with only the language name.",
+    "expected": "Python",
+    "match_type": "contains_word"
+  },
+  {
+    "id": "knowledge_004",
+    "category": "knowledge",
+    "prompt": "What is the speed of light in meters per second? Answer with only the number (approximate to nearest million).",
+    "expected": "300000000",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "knowledge_005",
+    "category": "knowledge",
+    "prompt": "In what year did the first Moon landing occur? Answer with only the year.",
+    "expected": "1969",
+    "match_type": "exact_number"
+  },
+  {
+    "id": "coding_001",
+    "category": "coding",
+    "prompt": "Write a Python function that returns the factorial of a number n. Return only the function code, no explanation.",
+    "expected": "def factorial",
+    "match_type": "contains_phrase"
+  },
+  {
+    "id": "coding_002",
+    "category": "coding",
+    "prompt": "What does the Python expression `[x**2 for x in range(5)]` evaluate to? Answer with only the list.",
+    "expected": "[0, 1, 4, 9, 16]",
+    "match_type": "contains_phrase"
+  },
+  {
+    "id": "coding_003",
+    "category": "coding",
+    "prompt": "What is the time complexity of binary search? Answer with only the Big-O notation.",
+    "expected": "O(log n)",
+    "match_type": "contains_phrase"
+  },
+  {
+    "id": "coding_004",
+    "category": "coding",
+    "prompt": "What git command stages all changes in the current directory? Answer with only the command.",
+    "expected": "git add",
+    "match_type": "contains_phrase"
+  },
+  {
+    "id": "coding_005",
+    "category": "coding",
+    "prompt": "In Python, what method converts a string to all uppercase letters? Answer with only the method name including parentheses.",
+    "expected": "upper()",
+    "match_type": "contains_phrase"
+  }
+]
